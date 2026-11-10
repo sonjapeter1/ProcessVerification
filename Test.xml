@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO DataType="com.werum.pasx.spec.abstractions.mbr.MasterBatchRecord" PasxVersion="3.1.8-PE4" id="1">
+<pasxHeader>
+<pasxChecksum><![CDATA[vK2xM0DhDqAmn9i1gveoHmiYGpQm1g9DKjPTPLi6hpEDnJVG6EfYqqtUaTcGxvEYx3urgo2xFRzsH2V5dyo3yddAnUks/2a2GovEVY9bPjL9hcT6DCw0UxF59SPwlc/ZRWzNUDGe41wrG1qK3prT+9MaQNfnT6SBezrYxhVLSNME9Z5muQh2pDGmWTA43vkNddHdh7r1AU+evPTfuF8My0Z31SDgcBmAw9zzJomCy61IophMExjVMNbwj4YOI/cmaCnSdzUTLuYOD38pROx5DKvwbksMkgNy5RRVGWjifp16F97DLt1pOYOUP1/6g4XdSAry9SdhGTOCLBS9eBKPj24qUbd5onend2l8CAZ1qwIA8PGzyqJ52SvmElsIWBcNnoDq/USi50Wo7LWpq5pKBckamC0pKpYXtk0x1clu7FT/G/Ym+ClkD8HLScnR0T1GbwPdu6Sha5sgLAyuKybFSDP+RAONYB+jqpjLto0cchiGcRxv//laczwnsBcruJQRCaVRsm/8o2jPMh7BBbazhhSHdjzKtFDJUlol5oRgDstvw1EjhzA3ZAQTuM/qXYlEbu0aebceZSM9En7ysF09vhbVsTcCJu+EUDpBm0Xw3vB5aEEb4ZfeVwwm95vbJUBlRRLgWiy0EBjzdn9ca6gh3OZU2yeCbJiF7SUTXiYkxEeTtmZonytgiTck8Pj/khQBJgU/8jPFdwKA5gC5o1RUEqdHxEdH9Qnpk7exkIiIG+mUyksvyuh0Pobx9Nxw91n7vZAiCfXvl0e34n3OPlLfFw==]]></pasxChecksum>
+<!--#Document meta data
+#Wed Nov 04 10:47:03 CET 2026
+user_createdBy=406
+user_createdOn=2026-11-04 10-47-03
+-->
+</pasxHeader>
+  <currentStatus>5000</currentStatus>
+  <customId>Kueche01</customId>
+  <deleteState>-1</deleteState>
+  <description>ESP-1-Kueche01_R</description>
+  <documentListEntryCollection class="VOCollection" id="2">
+    <aspectString>VOCollection</aspectString>
+    <c class="set" id="3">
+      <com.werum.pasx.spec.components.speccore.global.DocumentListEntryVO id="4">
+        <active>true</active>
+        <allowMultipleDocuments>false</allowMultipleDocuments>
+        <assignmentType>10</assignmentType>
+        <deleteState>-1</deleteState>
+        <description>Temperaturprofil</description>
+        <expectedNumber>1</expectedNumber>
+        <key>5226292716</key>
+        <number>10</number>
+        <optional>false</optional>
+        <originKey>5226292716</originKey>
+        <sts>0</sts>
+        <type>18078</type>
+      </com.werum.pasx.spec.components.speccore.global.DocumentListEntryVO>
+    </c>
+    <parent class="com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO" reference="1"/>
+    <parentAspect>documentListEntryCollection</parentAspect>
+  </documentListEntryCollection>
+  <equipmentListPosCollection class="VOCollection" id="5">
+    <aspectString>VOCollection</aspectString>
+    <c class="set" id="6"/>
+    <parent class="com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO" reference="1"/>
+    <parentAspect>equipmentListPosCollection</parentAspect>
+  </equipmentListPosCollection>
+  <estimatedYield>0.0</estimatedYield>
+  <hasWorkflow>false</hasWorkflow>
+  <isSimulationMbr>false</isSimulationMbr>
+  <key>5226270894</key>
+  <longDescription>Reinigung Oven K�che01</longDescription>
+  <maxBatchSize>0.0</maxBatchSize>
+  <minBatchSize>0.0</minBatchSize>
+  <numberOfUnits>0</numberOfUnits>
+  <origin>10</origin>
+  <originKey>5226270894</originKey>
+  <prodStepCollection class="VOCollection" id="7">
+    <aspectString>VOCollection</aspectString>
+    <c class="set" id="8">
+      <com.werum.pasx.spec.components.speccore.global.StartStepVO id="9">
+        <customId>Start</customId>
+        <deleteState>-1</deleteState>
+        <key>5226272687</key>
+        <originKey>5226272687</originKey>
+        <sts>0</sts>
+        <x>159.5</x>
+        <y>31.0</y>
+      </com.werum.pasx.spec.components.speccore.global.StartStepVO>
+      <com.werum.pasx.spec.components.speccore.global.EndStepVO id="10">
+        <customId>End</customId>
+        <deleteState>-1</deleteState>
+        <key>5226272688</key>
+        <originKey>5226272688</originKey>
+        <sts>0</sts>
+        <x>159.5</x>
+        <y>254.0</y>
+      </com.werum.pasx.spec.components.speccore.global.EndStepVO>
+      <com.werum.pasx.spec.components.speccore.global.BasicOperationVO id="11">
+        <active>true</active>
+        <bOAlarmFilterGroupAssigmentCollection class="VOCollection" id="12">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="13"/>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>bOAlarmFilterGroupAssigmentCollection</parentAspect>
+        </bOAlarmFilterGroupAssigmentCollection>
+        <customId>BO1</customId>
+        <deleteState>-1</deleteState>
+        <description>Reinigung K�che</description>
+        <equipmentListPosCollection class="VOCollection" id="14">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="15">
+            <com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO id="16">
+              <active>true</active>
+              <alternativeEquipmentAssignments class="VOCollection" id="17">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="18"/>
+                <parent class="com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO" reference="16"/>
+                <parentAspect>alternativeEquipmentAssignments</parentAspect>
+              </alternativeEquipmentAssignments>
+              <defaultAlternative>true</defaultAlternative>
+              <deleteState>-1</deleteState>
+              <dutyCycles>1</dutyCycles>
+              <equipmentAssignment class="com.werum.pasx.core.components.equipmentmd.global.WorkroomVO" id="19">
+                <customId>KUECHE-BBU-001</customId>
+                <deleteState>-1</deleteState>
+                <description>K�che in BBU</description>
+                <eqmClass>1</eqmClass>
+                <key>1639274</key>
+                <longDescription>K�che in BBU</longDescription>
+                <sts>0</sts>
+              </equipmentAssignment>
+              <key>5226272714</key>
+              <numberOfUnits>1</numberOfUnits>
+              <originKey>5226272714</originKey>
+              <position>1</position>
+              <reusableResource>false</reusableResource>
+              <sterilizations>0</sterilizations>
+              <sts>0</sts>
+            </com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO>
+            <com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO id="20">
+              <active>true</active>
+              <alternativeEquipmentAssignments class="VOCollection" id="21">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="22"/>
+                <parent class="com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO" reference="20"/>
+                <parentAspect>alternativeEquipmentAssignments</parentAspect>
+              </alternativeEquipmentAssignments>
+              <defaultAlternative>true</defaultAlternative>
+              <deleteState>-1</deleteState>
+              <dutyCycles>1</dutyCycles>
+              <equipmentAssignment class="com.werum.pasx.core.components.equipmentmd.global.ContainerVO" id="23">
+                <customId>OVEN-BBU-001</customId>
+                <deleteState>-1</deleteState>
+                <description>Oven in BBU</description>
+                <eqmClass>3</eqmClass>
+                <key>1639279</key>
+                <longDescription>Oven in BBU</longDescription>
+                <sts>0</sts>
+              </equipmentAssignment>
+              <key>5226272717</key>
+              <numberOfUnits>1</numberOfUnits>
+              <originKey>5226272717</originKey>
+              <position>2</position>
+              <reusableResource>false</reusableResource>
+              <sterilizations>0</sterilizations>
+              <sts>0</sts>
+            </com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO>
+          </c>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>equipmentListPosCollection</parentAspect>
+        </equipmentListPosCollection>
+        <erpPosition>0</erpPosition>
+        <erpRelevant>false</erpRelevant>
+        <hasSpecProps>false</hasSpecProps>
+        <hasWorkflow>true</hasWorkflow>
+        <key>5226272689</key>
+        <markerCollection class="VOCollection" id="24">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="25"/>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>markerCollection</parentAspect>
+        </markerCollection>
+        <materialInputCollection class="VOCollection" id="26">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="27"/>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>materialInputCollection</parentAspect>
+        </materialInputCollection>
+        <materialOutputCollection class="VOCollection" id="28">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="29"/>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>materialOutputCollection</parentAspect>
+        </materialOutputCollection>
+        <optional>false</optional>
+        <originKey>5226270904</originKey>
+        <prodStepCollection class="VOCollection" id="30">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="31">
+            <com.werum.pasx.spec.components.speccore.global.CommonBFVO id="32">
+              <active>true</active>
+              <customId>CBF1</customId>
+              <deleteState>-1</deleteState>
+              <description>Kuchen Backen</description>
+              <hasSpecProps>false</hasSpecProps>
+              <hasWorkflow>true</hasWorkflow>
+              <key>5226281475</key>
+              <markerCollection class="VOCollection" id="33">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="34"/>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>markerCollection</parentAspect>
+              </markerCollection>
+              <materialInputCollection class="VOCollection" id="35">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="36"/>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>materialInputCollection</parentAspect>
+              </materialInputCollection>
+              <materialOutputCollection class="VOCollection" id="37">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="38"/>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>materialOutputCollection</parentAspect>
+              </materialOutputCollection>
+              <optional>false</optional>
+              <originKey>5226274818</originKey>
+              <prodStepCollection class="VOCollection" id="39">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="40">
+                  <com.werum.pasx.spec.components.speccore.global.StartStepVO id="41">
+                    <customId>Start</customId>
+                    <deleteState>-1</deleteState>
+                    <key>5226281480</key>
+                    <originKey>5226281480</originKey>
+                    <sts>0</sts>
+                    <x>194.5</x>
+                    <y>31.0</y>
+                  </com.werum.pasx.spec.components.speccore.global.StartStepVO>
+                  <com.werum.pasx.spec.components.speccore.global.EndStepVO id="42">
+                    <customId>End</customId>
+                    <deleteState>-1</deleteState>
+                    <key>5226281481</key>
+                    <originKey>5226281481</originKey>
+                    <sts>0</sts>
+                    <x>194.5</x>
+                    <y>254.0</y>
+                  </com.werum.pasx.spec.components.speccore.global.EndStepVO>
+                  <com.werum.pasx.spec.components.speccore.global.CommonBFVO id="43">
+                    <active>true</active>
+                    <customId>CBF1</customId>
+                    <deleteState>-1</deleteState>
+                    <description>Common BF</description>
+                    <hasSpecProps>true</hasSpecProps>
+                    <hasWorkflow>false</hasWorkflow>
+                    <key>5226281482</key>
+                    <markerCollection class="VOCollection" id="44">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="45"/>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>markerCollection</parentAspect>
+                    </markerCollection>
+                    <materialInputCollection class="VOCollection" id="46">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="47"/>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>materialInputCollection</parentAspect>
+                    </materialInputCollection>
+                    <materialOutputCollection class="VOCollection" id="48">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="49"/>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>materialOutputCollection</parentAspect>
+                    </materialOutputCollection>
+                    <optional>false</optional>
+                    <originKey>5226274818</originKey>
+                    <prodStepCollection class="VOCollection" id="50">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="51"/>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>prodStepCollection</parentAspect>
+                    </prodStepCollection>
+                    <prodStepLinkCollection class="VOCollection" id="52">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="53"/>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>prodStepLinkCollection</parentAspect>
+                    </prodStepLinkCollection>
+                    <specPropCollection class="VOCollection" id="54">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="55">
+                        <com.werum.pasx.spec.components.speccore.global.MeasuredValueSpecPropVO id="56">
+                          <acquisitionType>1738</acquisitionType>
+                          <active>true</active>
+                          <activityType>5272</activityType>
+                          <checkAllSingleValueStatus>false</checkAllSingleValueStatus>
+                          <criticality>9001</criticality>
+                          <customId>BF1A040</customId>
+                          <cxDefinitionCollection class="VOCollection" id="57">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="58"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.MeasuredValueSpecPropVO" reference="56"/>
+                            <parentAspect>cxDefinitionCollection</parentAspect>
+                          </cxDefinitionCollection>
+                          <dataOrigin>10</dataOrigin>
+                          <deleteState>-1</deleteState>
+                          <description>Abwaage Mehl</description>
+                          <evaluationFunction>3175</evaluationFunction>
+                          <instructionCollection class="VOCollection" id="59">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="60"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.MeasuredValueSpecPropVO" reference="56"/>
+                            <parentAspect>instructionCollection</parentAspect>
+                          </instructionCollection>
+                          <key>5226290324</key>
+                          <mandatory>false</mandatory>
+                          <markerCollection class="VOCollection" id="61">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="62"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.MeasuredValueSpecPropVO" reference="56"/>
+                            <parentAspect>markerCollection</parentAspect>
+                          </markerCollection>
+                          <maxDefinition>5.0</maxDefinition>
+                          <maxIntervention>1.2</maxIntervention>
+                          <maxTolerance>1.5</maxTolerance>
+                          <maxWarn>1.1</maxWarn>
+                          <minDefinition>0.0</minDefinition>
+                          <minIntervention>0.8</minIntervention>
+                          <minTolerance>0.5</minTolerance>
+                          <minWarn>0.9</minWarn>
+                          <numberOfSingleValuesFrom>1</numberOfSingleValuesFrom>
+                          <numberOfSingleValuesOutOfLimit>0</numberOfSingleValuesOutOfLimit>
+                          <numberOfSingleValuesTo>1</numberOfSingleValuesTo>
+                          <originKey>5226290324</originKey>
+                          <position>40</position>
+                          <setValue>1.0</setValue>
+                          <sts>0</sts>
+                          <unit class="com.werum.pasx.spec.components.speccore.global.UnitOfMeasureVO" id="63">
+                            <customId>kg</customId>
+                            <deleteState>-1</deleteState>
+                            <description>kg</description>
+                            <key>12897</key>
+                            <longDescription>Kilogramm</longDescription>
+                            <originKey>0</originKey>
+                            <sts>0</sts>
+                          </unit>
+                        </com.werum.pasx.spec.components.speccore.global.MeasuredValueSpecPropVO>
+                        <com.werum.pasx.spec.components.formula.global.FormulaSpecPropVO id="64">
+                          <acquisitionType>1731</acquisitionType>
+                          <active>true</active>
+                          <activityType>5272</activityType>
+                          <criticality>9002</criticality>
+                          <customId>BF1A0050</customId>
+                          <cxDefinitionCollection class="VOCollection" id="65">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="66"/>
+                            <parent class="com.werum.pasx.spec.components.formula.global.FormulaSpecPropVO" reference="64"/>
+                            <parentAspect>cxDefinitionCollection</parentAspect>
+                          </cxDefinitionCollection>
+                          <dataOrigin>50</dataOrigin>
+                          <deleteState>-1</deleteState>
+                          <description>Berechnung menge Zucker</description>
+                          <formulaDataType>1</formulaDataType>
+                          <formulaText>Internal formula: " \Du hast \ " + { valueSpecProp MasterBatchRecord@5226270894-prodStepCollection-BasicOperation@5226272689-prodStepCollection-CommonBF@5226281475-prodStepCollection-CommonBF@5226281482-specPropCollection-MeasuredValueSpecProp@5226290324 } + " \ kg abgewogen\ " 
+
+ [ ajhkdajhf�kjah�fdjha�ksdjfhk�asjfh ]</formulaText>
+                          <instructionCollection class="VOCollection" id="67">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="68"/>
+                            <parent class="com.werum.pasx.spec.components.formula.global.FormulaSpecPropVO" reference="64"/>
+                            <parentAspect>instructionCollection</parentAspect>
+                          </instructionCollection>
+                          <key>5226290343</key>
+                          <mandatory>true</mandatory>
+                          <markerCollection class="VOCollection" id="69">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="70"/>
+                            <parent class="com.werum.pasx.spec.components.formula.global.FormulaSpecPropVO" reference="64"/>
+                            <parentAspect>markerCollection</parentAspect>
+                          </markerCollection>
+                          <originKey>5226290343</originKey>
+                          <position>50</position>
+                          <sts>0</sts>
+                        </com.werum.pasx.spec.components.formula.global.FormulaSpecPropVO>
+                        <com.werum.pasx.spec.components.speccore.global.DateSpecPropVO id="71">
+                          <acquisitionType>1733</acquisitionType>
+                          <active>true</active>
+                          <activityType>5272</activityType>
+                          <criticality>9000</criticality>
+                          <customId>BF1A020</customId>
+                          <cxDefinitionCollection class="VOCollection" id="72">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="73"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.DateSpecPropVO" reference="71"/>
+                            <parentAspect>cxDefinitionCollection</parentAspect>
+                          </cxDefinitionCollection>
+                          <dataOrigin>10</dataOrigin>
+                          <deleteState>-1</deleteState>
+                          <description>Datum Kuchen</description>
+                          <instructionCollection class="VOCollection" id="74">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="75">
+                              <com.werum.pasx.spec.components.speccore.global.InstructionVO id="76">
+                                <deleteState>-1</deleteState>
+                                <instructionText>Gebe das Dtaum an</instructionText>
+                                <key>5226281528</key>
+                                <originKey>5226281528</originKey>
+                                <position>1</position>
+                                <sts>0</sts>
+                              </com.werum.pasx.spec.components.speccore.global.InstructionVO>
+                            </c>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.DateSpecPropVO" reference="71"/>
+                            <parentAspect>instructionCollection</parentAspect>
+                          </instructionCollection>
+                          <key>5226281518</key>
+                          <mandatory>true</mandatory>
+                          <markerCollection class="VOCollection" id="77">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="78"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.DateSpecPropVO" reference="71"/>
+                            <parentAspect>markerCollection</parentAspect>
+                          </markerCollection>
+                          <originKey>5226281518</originKey>
+                          <position>20</position>
+                          <sts>0</sts>
+                        </com.werum.pasx.spec.components.speccore.global.DateSpecPropVO>
+                        <com.werum.pasx.spec.components.speccore.global.DocumentSpecPropVO id="79">
+                          <acquisitionType>1732</acquisitionType>
+                          <active>true</active>
+                          <activityType>5272</activityType>
+                          <criticality>9000</criticality>
+                          <customId>BF1A070</customId>
+                          <cxDefinitionCollection class="VOCollection" id="80">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="81"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.DocumentSpecPropVO" reference="79"/>
+                            <parentAspect>cxDefinitionCollection</parentAspect>
+                          </cxDefinitionCollection>
+                          <dataOrigin>10</dataOrigin>
+                          <deleteState>-1</deleteState>
+                          <description>Dokument Temperaturprofil</description>
+                          <documentListEntry class="com.werum.pasx.spec.components.speccore.global.DocumentListEntryVO" reference="4"/>
+                          <instructionCollection class="VOCollection" id="82">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="83"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.DocumentSpecPropVO" reference="79"/>
+                            <parentAspect>instructionCollection</parentAspect>
+                          </instructionCollection>
+                          <key>5226292729</key>
+                          <mandatory>true</mandatory>
+                          <markerCollection class="VOCollection" id="84">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="85"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.DocumentSpecPropVO" reference="79"/>
+                            <parentAspect>markerCollection</parentAspect>
+                          </markerCollection>
+                          <originKey>5226292729</originKey>
+                          <position>70</position>
+                          <sts>0</sts>
+                        </com.werum.pasx.spec.components.speccore.global.DocumentSpecPropVO>
+                        <com.werum.pasx.spec.components.speccore.global.ListSpecPropVO id="86">
+                          <acquisitionType>1736</acquisitionType>
+                          <active>true</active>
+                          <activityType>5272</activityType>
+                          <criticality>9000</criticality>
+                          <customId>BF1A060</customId>
+                          <cxDefinitionCollection class="VOCollection" id="87">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="88"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.ListSpecPropVO" reference="86"/>
+                            <parentAspect>cxDefinitionCollection</parentAspect>
+                          </cxDefinitionCollection>
+                          <dataOrigin>10</dataOrigin>
+                          <deleteState>-1</deleteState>
+                          <description>Anzahl Portionen</description>
+                          <instructionCollection class="VOCollection" id="89">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="90"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.ListSpecPropVO" reference="86"/>
+                            <parentAspect>instructionCollection</parentAspect>
+                          </instructionCollection>
+                          <key>5226290580</key>
+                          <listSpecPropElementCollection class="VOCollection" id="91">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="92">
+                              <com.werum.pasx.spec.components.speccore.global.ListSpecPropElementVO id="93">
+                                <deleteState>-1</deleteState>
+                                <description>1-4</description>
+                                <key>5226290621</key>
+                                <originKey>5226290621</originKey>
+                                <setValue>true</setValue>
+                                <sts>0</sts>
+                              </com.werum.pasx.spec.components.speccore.global.ListSpecPropElementVO>
+                              <com.werum.pasx.spec.components.speccore.global.ListSpecPropElementVO id="94">
+                                <deleteState>-1</deleteState>
+                                <description>5-8</description>
+                                <key>5226290624</key>
+                                <originKey>5226290624</originKey>
+                                <setValue>true</setValue>
+                                <sts>0</sts>
+                              </com.werum.pasx.spec.components.speccore.global.ListSpecPropElementVO>
+                            </c>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.ListSpecPropVO" reference="86"/>
+                            <parentAspect>listSpecPropElementCollection</parentAspect>
+                          </listSpecPropElementCollection>
+                          <mandatory>true</mandatory>
+                          <markerCollection class="VOCollection" id="95">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="96"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.ListSpecPropVO" reference="86"/>
+                            <parentAspect>markerCollection</parentAspect>
+                          </markerCollection>
+                          <originKey>5226290580</originKey>
+                          <position>60</position>
+                          <sts>0</sts>
+                        </com.werum.pasx.spec.components.speccore.global.ListSpecPropVO>
+                        <com.werum.pasx.spec.components.speccore.global.AttributiveSpecPropVO id="97">
+                          <acquisitionType>1732</acquisitionType>
+                          <active>true</active>
+                          <activityType>5272</activityType>
+                          <criticality>9000</criticality>
+                          <customId>BF1A0010</customId>
+                          <cxDefinitionCollection class="VOCollection" id="98">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="99"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.AttributiveSpecPropVO" reference="97"/>
+                            <parentAspect>cxDefinitionCollection</parentAspect>
+                          </cxDefinitionCollection>
+                          <dataOrigin>10</dataOrigin>
+                          <deleteState>-1</deleteState>
+                          <description> Mis en place Mehl</description>
+                          <falseText>Nicht Durchgef�hrt</falseText>
+                          <instructionCollection class="VOCollection" id="100">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="101">
+                              <com.werum.pasx.spec.components.speccore.global.InstructionVO id="102">
+                                <deleteState>-1</deleteState>
+                                <instructionText>&lt;html&gt;&lt;font size="10"&gt;&lt;b&gt;Dein Text&lt;/b&gt;&lt;/font&gt; &lt;/html&gt;</instructionText>
+                                <key>5226281501</key>
+                                <originKey>5226281501</originKey>
+                                <position>1</position>
+                                <sts>0</sts>
+                              </com.werum.pasx.spec.components.speccore.global.InstructionVO>
+                            </c>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.AttributiveSpecPropVO" reference="97"/>
+                            <parentAspect>instructionCollection</parentAspect>
+                          </instructionCollection>
+                          <key>5226281500</key>
+                          <mandatory>true</mandatory>
+                          <markerCollection class="VOCollection" id="103">
+                            <aspectString>VOCollection</aspectString>
+                            <c class="set" id="104"/>
+                            <parent class="com.werum.pasx.spec.components.speccore.global.AttributiveSpecPropVO" reference="97"/>
+                            <parentAspect>markerCollection</parentAspect>
+                          </markerCollection>
+                          <originKey>5226281500</originKey>
+                          <position>10</position>
+                          <sts>0</sts>
+                          <trueText>Durchgef�hrt</trueText>
+                        </com.werum.pasx.spec.components.speccore.global.AttributiveSpecPropVO>
+                      </c>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>specPropCollection</parentAspect>
+                    </specPropCollection>
+                    <stickyNoteCollection class="VOCollection" id="105">
+                      <aspectString>VOCollection</aspectString>
+                      <c class="set" id="106"/>
+                      <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                      <parentAspect>stickyNoteCollection</parentAspect>
+                    </stickyNoteCollection>
+                    <sts>0</sts>
+                    <userIdentification>1000</userIdentification>
+                    <verificationSignature>false</verificationSignature>
+                    <x>111.0</x>
+                    <y>118.0</y>
+                  </com.werum.pasx.spec.components.speccore.global.CommonBFVO>
+                </c>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>prodStepCollection</parentAspect>
+              </prodStepCollection>
+              <prodStepLinkCollection class="VOCollection" id="107">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="108">
+                  <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="109">
+                    <deleteState>-1</deleteState>
+                    <key>5226281484</key>
+                    <originKey>5226274814</originKey>
+                    <sourcePortNo>3</sourcePortNo>
+                    <sourceProdStep class="com.werum.pasx.spec.components.speccore.global.StartStepVO" reference="41"/>
+                    <sourceX>213.0</sourceX>
+                    <sourceY>63.0</sourceY>
+                    <sts>0</sts>
+                    <targetPortNo>1</targetPortNo>
+                    <targetProdStep class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                    <targetX>213.0</targetX>
+                    <targetY>124.0</targetY>
+                  </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+                  <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="110">
+                    <deleteState>-1</deleteState>
+                    <key>5226281485</key>
+                    <originKey>5226274814</originKey>
+                    <sourcePortNo>3</sourcePortNo>
+                    <sourceProdStep class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="43"/>
+                    <sourceX>213.0</sourceX>
+                    <sourceY>196.0</sourceY>
+                    <sts>0</sts>
+                    <targetPortNo>1</targetPortNo>
+                    <targetProdStep class="com.werum.pasx.spec.components.speccore.global.EndStepVO" reference="42"/>
+                    <targetX>213.0</targetX>
+                    <targetY>259.0</targetY>
+                  </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+                </c>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>prodStepLinkCollection</parentAspect>
+              </prodStepLinkCollection>
+              <specPropCollection class="VOCollection" id="111">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="112"/>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>specPropCollection</parentAspect>
+              </specPropCollection>
+              <stickyNoteCollection class="VOCollection" id="113">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="114"/>
+                <parent class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+                <parentAspect>stickyNoteCollection</parentAspect>
+              </stickyNoteCollection>
+              <sts>0</sts>
+              <userIdentification>1000</userIdentification>
+              <verificationSignature>false</verificationSignature>
+              <x>111.0</x>
+              <y>390.0</y>
+            </com.werum.pasx.spec.components.speccore.global.CommonBFVO>
+            <com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO id="115">
+              <active>true</active>
+              <automaticToManualExecution>false</automaticToManualExecution>
+              <basicFunctionType>5272</basicFunctionType>
+              <customId>ID1</customId>
+              <deleteState>-1</deleteState>
+              <description>EQ-ID-K�che</description>
+              <eqmStatusCheckPositionCollection class="VOCollection" id="116">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="117">
+                  <com.werum.pasx.spec.components.equipment.global.EqmStatusCheckPositionVO id="118">
+                    <deleteState>-1</deleteState>
+                    <expectedStatus class="com.werum.pasx.core.components.equipmentmd.global.EquipmentStatusVO" id="119">
+                      <customId>Sauber</customId>
+                      <deleteState>-1</deleteState>
+                      <key>63449</key>
+                      <sts>0</sts>
+                    </expectedStatus>
+                    <key>5226272731</key>
+                    <originKey>5226272731</originKey>
+                    <statusDiagramName>Reinigung_Neu</statusDiagramName>
+                    <sts>0</sts>
+                  </com.werum.pasx.spec.components.equipment.global.EqmStatusCheckPositionVO>
+                </c>
+                <parent class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="115"/>
+                <parentAspect>eqmStatusCheckPositionCollection</parentAspect>
+              </eqmStatusCheckPositionCollection>
+              <equipmentListPos class="com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO" reference="16"/>
+              <equipmentStatusCheckType>30</equipmentStatusCheckType>
+              <identificationType>1</identificationType>
+              <implicitAllocation>false</implicitAllocation>
+              <isAutomaticExecutionEnabled>false</isAutomaticExecutionEnabled>
+              <key>5226272726</key>
+              <markerCollection class="VOCollection" id="120">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="121"/>
+                <parent class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="115"/>
+                <parentAspect>markerCollection</parentAspect>
+              </markerCollection>
+              <optional>false</optional>
+              <originKey>5226272369</originKey>
+              <reuseResource>false</reuseResource>
+              <sts>0</sts>
+              <userIdentification>1000</userIdentification>
+              <verificationSignature>false</verificationSignature>
+              <x>111.0</x>
+              <y>118.0</y>
+            </com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO>
+            <com.werum.pasx.spec.components.speccore.global.StartStepVO id="122">
+              <customId>Start</customId>
+              <deleteState>-1</deleteState>
+              <key>5226272708</key>
+              <originKey>5226272708</originKey>
+              <sts>0</sts>
+              <x>194.5</x>
+              <y>31.0</y>
+            </com.werum.pasx.spec.components.speccore.global.StartStepVO>
+            <com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO id="123">
+              <active>true</active>
+              <automaticToManualExecution>false</automaticToManualExecution>
+              <basicFunctionType>5272</basicFunctionType>
+              <customId>ID2</customId>
+              <deleteState>-1</deleteState>
+              <description>EQ-ID-Oven</description>
+              <eqmStatusCheckPositionCollection class="VOCollection" id="124">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="125"/>
+                <parent class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="123"/>
+                <parentAspect>eqmStatusCheckPositionCollection</parentAspect>
+              </eqmStatusCheckPositionCollection>
+              <equipmentListPos class="com.werum.pasx.spec.components.equipment.global.EquipmentListPosVO" reference="20"/>
+              <equipmentStatusCheckType>20</equipmentStatusCheckType>
+              <identificationType>1</identificationType>
+              <implicitAllocation>false</implicitAllocation>
+              <isAutomaticExecutionEnabled>false</isAutomaticExecutionEnabled>
+              <key>5226272737</key>
+              <markerCollection class="VOCollection" id="126">
+                <aspectString>VOCollection</aspectString>
+                <c class="set" id="127"/>
+                <parent class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="123"/>
+                <parentAspect>markerCollection</parentAspect>
+              </markerCollection>
+              <optional>false</optional>
+              <originKey>5226272369</originKey>
+              <reuseResource>false</reuseResource>
+              <sts>0</sts>
+              <userIdentification>1000</userIdentification>
+              <verificationSignature>false</verificationSignature>
+              <x>111.0</x>
+              <y>254.0</y>
+            </com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO>
+            <com.werum.pasx.spec.components.speccore.global.EndStepVO id="128">
+              <customId>End</customId>
+              <deleteState>-1</deleteState>
+              <key>5226272709</key>
+              <originKey>5226272709</originKey>
+              <sts>0</sts>
+              <x>194.5</x>
+              <y>526.0</y>
+            </com.werum.pasx.spec.components.speccore.global.EndStepVO>
+          </c>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>prodStepCollection</parentAspect>
+        </prodStepCollection>
+        <prodStepLinkCollection class="VOCollection" id="129">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="130">
+            <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="131">
+              <deleteState>-1</deleteState>
+              <key>5226281478</key>
+              <originKey>5226274814</originKey>
+              <sourcePortNo>3</sourcePortNo>
+              <sourceProdStep class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="123"/>
+              <sourceX>213.0</sourceX>
+              <sourceY>332.0</sourceY>
+              <sts>0</sts>
+              <targetPortNo>1</targetPortNo>
+              <targetProdStep class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+              <targetX>213.0</targetX>
+              <targetY>396.0</targetY>
+            </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+            <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="132">
+              <deleteState>-1</deleteState>
+              <key>5226272729</key>
+              <originKey>5226270901</originKey>
+              <sourcePortNo>3</sourcePortNo>
+              <sourceProdStep class="com.werum.pasx.spec.components.speccore.global.StartStepVO" reference="122"/>
+              <sourceX>213.0</sourceX>
+              <sourceY>63.0</sourceY>
+              <sts>0</sts>
+              <targetPortNo>1</targetPortNo>
+              <targetProdStep class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="115"/>
+              <targetX>213.0</targetX>
+              <targetY>124.0</targetY>
+            </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+            <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="133">
+              <deleteState>-1</deleteState>
+              <key>5226281479</key>
+              <originKey>5226274814</originKey>
+              <sourcePortNo>3</sourcePortNo>
+              <sourceProdStep class="com.werum.pasx.spec.components.speccore.global.CommonBFVO" reference="32"/>
+              <sourceX>213.0</sourceX>
+              <sourceY>468.0</sourceY>
+              <sts>0</sts>
+              <targetPortNo>1</targetPortNo>
+              <targetProdStep class="com.werum.pasx.spec.components.speccore.global.EndStepVO" reference="128"/>
+              <targetX>213.0</targetX>
+              <targetY>531.0</targetY>
+            </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+            <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="134">
+              <deleteState>-1</deleteState>
+              <key>5226272740</key>
+              <originKey>5226270901</originKey>
+              <sourcePortNo>3</sourcePortNo>
+              <sourceProdStep class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="115"/>
+              <sourceX>213.0</sourceX>
+              <sourceY>196.0</sourceY>
+              <sts>0</sts>
+              <targetPortNo>1</targetPortNo>
+              <targetProdStep class="com.werum.pasx.spec.components.equipment.global.EqmIdentificationBFVO" reference="123"/>
+              <targetX>213.0</targetX>
+              <targetY>260.0</targetY>
+            </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+          </c>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>prodStepLinkCollection</parentAspect>
+        </prodStepLinkCollection>
+        <productionUnitCollection class="VOCollection" id="135">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="136">
+            <com.werum.pasx.core.components.equipmentmd.global.ProductionUnitVO id="137">
+              <deleteState>-1</deleteState>
+              <id>DISP01</id>
+              <key>16842</key>
+              <sts>0</sts>
+            </com.werum.pasx.core.components.equipmentmd.global.ProductionUnitVO>
+          </c>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>productionUnitCollection</parentAspect>
+        </productionUnitCollection>
+        <reconciliation>false</reconciliation>
+        <specPropCollection class="VOCollection" id="138">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="139"/>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>specPropCollection</parentAspect>
+        </specPropCollection>
+        <startCondition>1501</startCondition>
+        <stickyNoteCollection class="VOCollection" id="140">
+          <aspectString>VOCollection</aspectString>
+          <c class="set" id="141"/>
+          <parent class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+          <parentAspect>stickyNoteCollection</parentAspect>
+        </stickyNoteCollection>
+        <sts>0</sts>
+        <userIdentification>1000</userIdentification>
+        <verificationSignature>false</verificationSignature>
+        <x>76.0</x>
+        <y>118.0</y>
+      </com.werum.pasx.spec.components.speccore.global.BasicOperationVO>
+    </c>
+    <parent class="com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO" reference="1"/>
+    <parentAspect>prodStepCollection</parentAspect>
+  </prodStepCollection>
+  <prodStepLinkCollection class="VOCollection" id="142">
+    <aspectString>VOCollection</aspectString>
+    <c class="set" id="143">
+      <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="144">
+        <deleteState>-1</deleteState>
+        <key>5226272694</key>
+        <originKey>5226270901</originKey>
+        <sourcePortNo>3</sourcePortNo>
+        <sourceProdStep class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+        <sourceX>178.0</sourceX>
+        <sourceY>196.0</sourceY>
+        <sts>0</sts>
+        <targetPortNo>1</targetPortNo>
+        <targetProdStep class="com.werum.pasx.spec.components.speccore.global.EndStepVO" reference="10"/>
+        <targetX>178.0</targetX>
+        <targetY>259.0</targetY>
+      </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+      <com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO id="145">
+        <deleteState>-1</deleteState>
+        <key>5226272693</key>
+        <originKey>5226270901</originKey>
+        <sourcePortNo>3</sourcePortNo>
+        <sourceProdStep class="com.werum.pasx.spec.components.speccore.global.StartStepVO" reference="9"/>
+        <sourceX>178.0</sourceX>
+        <sourceY>63.0</sourceY>
+        <sts>0</sts>
+        <targetPortNo>1</targetPortNo>
+        <targetProdStep class="com.werum.pasx.spec.components.speccore.global.BasicOperationVO" reference="11"/>
+        <targetX>178.0</targetX>
+        <targetY>124.0</targetY>
+      </com.werum.pasx.spec.components.speccore.global.ProdStepLinkVO>
+    </c>
+    <parent class="com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO" reference="1"/>
+    <parentAspect>prodStepLinkCollection</parentAspect>
+  </prodStepLinkCollection>
+  <productionArea>1634</productionArea>
+  <productionType>40</productionType>
+  <releaseSignatureCollection class="VOCollection" id="146">
+    <aspectString>VOCollection</aspectString>
+    <c class="set" id="147"/>
+    <parent class="com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO" reference="1"/>
+    <parentAspect>releaseSignatureCollection</parentAspect>
+  </releaseSignatureCollection>
+  <specificationType>20</specificationType>
+  <standardBatchSize>0.0</standardBatchSize>
+  <stickyNoteCollection class="VOCollection" id="148">
+    <aspectString>VOCollection</aspectString>
+    <c class="set" id="149"/>
+    <parent class="com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO" reference="1"/>
+    <parentAspect>stickyNoteCollection</parentAspect>
+  </stickyNoteCollection>
+  <storageUnit>23</storageUnit>
+  <sts>0</sts>
+  <targetEquipmentType class="com.werum.pasx.core.components.equipmentmd.global.ContainerGroupVO" id="150">
+    <customId>FAT</customId>
+    <deleteState>-1</deleteState>
+    <description>Fass 120 l Edelstahl  (2041016)</description>
+    <eqmClass>3</eqmClass>
+    <key>1197387</key>
+    <longDescription>Fass 120 l Edelstahl  (2041016)</longDescription>
+    <sts>0</sts>
+  </targetEquipmentType>
+  <versionId>00000001</versionId>
+</com.werum.pasx.spec.components.mbr.global.MasterBatchRecordVO>

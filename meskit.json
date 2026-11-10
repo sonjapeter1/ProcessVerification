@@ -1,0 +1,9 @@
+{
+  "name": "meskit_mbr_comment_extractor",
+  "displayName": "MBR Comment Extractor",
+  "description": "Extract instructionText from XML files and generate Word documents",
+  "route": "/meskit_mbr_comment_extractor",
+  "containerName": "meskit_mbr_comment_extractor",
+  "port": 8000,
+  "enabled": true
+}

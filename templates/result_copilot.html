@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="de" data-bs-theme="auto">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>InstructionText Results</title>
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+          rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/bootstrap-icons.css') }}"
+          rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            background-color: #ffffff;
+        }
+
+        .path-cell {
+            min-width: 300px;
+            max-width: 500px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            overflow-wrap: anywhere;
+            vertical-align: top;
+        }
+
+        .content-cell {
+            min-width: 350px;
+            max-width: 700px;
+            overflow-wrap: anywhere;
+            vertical-align: top;
+        }
+
+        .corrected-cell {
+            min-width: 350px;
+            max-width: 700px;
+            overflow-wrap: anywhere;
+            vertical-align: top;
+            white-space: pre-wrap;
+        }
+
+        .content-cell img,
+        .corrected-cell img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .table th {
+            white-space: nowrap;
+        }
+
+        .table td {
+            padding: 1rem;
+        }
+
+        .original-header {
+            background-color: #f8f9fa;
+        }
+
+        .corrected-header {
+            background-color: #e8f5e9 !important;
+        }
+
+        .corrected-cell {
+            background-color: rgba(25, 135, 84, 0.03);
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-body-secondary">
+
+<div class="container-fluid py-4 px-lg-5">
+
+    <!-- HEADER -->
+
+    <div class="d-flex flex-wrap
+                justify-content-between
+                align-items-center
+                gap-3
+                mb-4">
+
+        <div>
+
+            <h1 class="h3 mb-1">
+
+                <i class="bi bi-file-earmark-text
+                          text-primary me-2"></i>
+
+                InstructionText Results
+
+            </h1>
+
+            <div class="text-secondary small">
+
+                Source file:
+                <strong>{{ source_name }}</strong>
+
+                <span class="mx-2">|</span>
+
+                Instructions:
+                <strong>{{ count }}</strong>
+
+                <span class="mx-2">|</span>
+
+                Generated:
+                {{ created_at }}
+
+                {% if ollama_model %}
+
+                    <span class="mx-2">|</span>
+
+                    Model:
+                    <strong>{{ ollama_model }}</strong>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+
+        <!-- ACTION BUTTONS -->
+
+        <div class="d-flex gap-2">
+
+            <a href="{{ url_for('index') }}"
+               class="btn btn-outline-secondary">
+
+                <i class="bi bi-arrow-left me-1"></i>
+
+                New Upload
+
+            </a>
+
+
+            <a href="{{ url_for('download_word') }}"
+               class="btn btn-primary">
+
+                <i class="bi bi-file-earmark-word me-1"></i>
+
+                Download Word
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESULT TABLE -->
+
+    <div class="card shadow-sm">
+
+        <div class="card-header
+                    bg-white
+                    d-flex
+                    justify-content-between
+                    align-items-center">
+
+            <strong>
+                Extracted InstructionText Elements
+            </strong>
+
+            <span class="badge text-bg-primary">
+                {{ count }} Entries
+            </span>
+
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table class="table
+                          table-striped
+                          table-hover
+                          align-middle
+                          mb-0">
+
+                <thead class="table-light">
+
+                    <tr>
+
+                        <th style="width: 60px;">
+                            #
+                        </th>
+
+                        <th style="width: 25%;">
+                            XML Path
+                        </th>
+
+                        <th style="width: 37%;"
+                            class="original-header">
+
+                            Original InstructionText
+
+                        </th>
+
+                        <th style="width: 38%;"
+                            class="corrected-header">
+
+                            <i class="bi bi-stars me-1"></i>
+
+                            Corrected InstructionText
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    {% for item in rows %}
+
+                    <tr>
+
+                        <!-- NUMBER -->
+
+                        <td>
+                            {{ loop.index }}
+                        </td>
+
+
+                        <!-- XML PATH -->
+
+                        <td class="path-cell">
+
+                            {{ item.path }}
+
+                        </td>
+
+
+                        <!-- ORIGINAL CONTENT -->
+
+                        <td class="content-cell">
+
+                            {% if item.content_html %}
+
+                                {{ item.content_html | safe }}
+
+                            {% else %}
+
+                                <span class="text-muted">
+                                    Empty
+                                </span>
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- CORRECTED CONTENT -->
+
+                        <td class="corrected-cell">
+
+                            {% if item.corrected_instruction %}
+
+                                {{ item.corrected_instruction }}
+
+                            {% else %}
+
+                                <span class="text-muted">
+                                    Not corrected
+                                </span>
+
+                            {% endif %}
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}">
+</script>
+
+</body>
+
+</html>
